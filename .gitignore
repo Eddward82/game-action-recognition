@@ -1,0 +1,23 @@
+# Dataset and extracted frames - never commit these (size + licensing, see README)
+dataset/
+extracted_frames/
+selected_classes/
+UCF-101/
+*.rar
+
+# Trained model weights - too large for plain git (use Drive/Git LFS if truly needed)
+*.keras
+*.h5
+best_model*
+
+# Results are fine to keep EXCEPT large binary outputs
+results/**/*.keras
+results/**/*.png
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# OS junk
+.DS_Store
